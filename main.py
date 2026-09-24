@@ -323,7 +323,7 @@ async def on_message(message: discord.Message):
             embed.add_field(name="Channel", value=message.channel.mention, inline=False)
             content_preview = message.content if message.content else "*(no text content)*"
             if len(content_preview) > 1000:
-                content_preview = content_preview[:1000] + "…"
+                content_preview = content_preview[:1000] + "..."
             embed.add_field(name="Content", value=content_preview, inline=False)
             if message.attachments:
                 embed.add_field(
